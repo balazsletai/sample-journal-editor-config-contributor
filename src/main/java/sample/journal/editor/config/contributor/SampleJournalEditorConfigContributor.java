@@ -15,6 +15,10 @@ import org.osgi.service.component.annotations.Component;
 
 import java.util.Map;
 
+/**
+ * @author balazs.letai@liferay.com
+ */
+
 @Component(
 	immediate = true,
 	property = {
@@ -37,9 +41,9 @@ public class SampleJournalEditorConfigContributor
 		String extraPlugins = jsonObject.getString("extraPlugins");
 
 		if (Validator.isNotNull(extraPlugins)) {
-			extraPlugins = extraPlugins + ",maximize,showblocks,iframe,mathjax,pastefromword";
+			extraPlugins = extraPlugins + ",maximize,showblocks,iframe,mathjax,pastefromword,justify,colorbutton,basicstyles,indent";
 			jsonObject.put("extraPlugins", extraPlugins);
-			
+
 			JSONArray toolbarsLiferay = jsonObject.getJSONArray("toolbar_liferay");
 			JSONArray extraTools_liferay = JSONFactoryUtil.createJSONArray();
 
@@ -57,13 +61,36 @@ public class SampleJournalEditorConfigContributor
 			extraTools_liferay.put("Mathjax");
 			extraTools_liferay.put("-");
 			extraTools_liferay.put("PasteFromWord");
-			
-			jsonObject.put("mathJaxLib", "//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML");	
-		
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("JustifyRight");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("JustifyCenter");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("JustifyLeft");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("JustifyBlock");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("TextColor");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("BGColor");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("Superscript");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("RemoveFormat");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("Strike");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("Subscript");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("Outdent");
+			extraTools_liferay.put("-");
+			extraTools_liferay.put("Indent");
+			extraTools_liferay.put("-");
+
+			jsonObject.put("mathJaxLib", "//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML");
+
 		}
+
 	}
-
-	
-
 
 }
