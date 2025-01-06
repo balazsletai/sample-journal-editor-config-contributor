@@ -23,6 +23,7 @@ import java.util.Map;
 	immediate = true,
 	property = {
 		"editor.config.key=contentEditor", "editor.config.key=rich_text",
+		"editor.config.key=translateEditor",
 		"editor.name=ckeditor", "editor.name=ckeditor_classic",
 		"service.ranking:Integer=100"
 	},
