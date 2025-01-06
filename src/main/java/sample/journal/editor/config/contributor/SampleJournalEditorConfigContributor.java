@@ -23,7 +23,12 @@ import java.util.Map;
 	immediate = true,
 	property = {
 		"editor.config.key=contentEditor", "editor.config.key=rich_text",
+
+		// For Liferay 7.3
 		"editor.config.key=translateEditor",
+		// For Liferay 7.4
+		// "editor.config.key=defaultTranslateEditor",
+
 		"editor.name=ckeditor", "editor.name=ckeditor_classic",
 		"service.ranking:Integer=100"
 	},
