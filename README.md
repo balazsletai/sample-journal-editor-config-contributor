@@ -9,8 +9,8 @@ This module provides an override for CKEditor in Liferay. Follow the steps below
      ```bash
      blade init
      ```
-   - Enter `more`.
-   - Choose the number corresponding to the Liferay version you need.
+   - Enter `more` to see all the available versions.
+   - Choose the number corresponding to the Liferay version you need. e.g. '1'
    - Press `Enter`.
 
 2. **Navigate to the `modules` Folder**  
@@ -24,8 +24,8 @@ This module provides an override for CKEditor in Liferay. Follow the steps below
      `modules/sample-journal-editor-config-contributor/src/main/java/com/example/SampleJournalEditorConfigContributor.java`
    - Choose the configuration key appropriate for your Liferay version and comment out the other:
      ```java
-     "editor.config.key=translateEditor" // Use this for version X
-     "editor.config.key=defaultTranslateEditor" // Use this for version Y
+     "editor.config.key=translateEditor" // Use this for version 7.3
+     "editor.config.key=defaultTranslateEditor" // Use this for version 7.4+
      ```
    - Save your changes.
 
