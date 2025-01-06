@@ -32,7 +32,7 @@ This module provides an override for CKEditor in Liferay. Follow the steps below
 5. **Build the Module**  
    - From the `modules` folder, run the following command:
    ```bash
-      blade gw clean build
+   blade gw clean build
    ```
 
 6. **Find the Deployable Module**
