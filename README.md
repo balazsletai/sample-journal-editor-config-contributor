@@ -40,3 +40,6 @@ This module provides an override for CKEditor in Liferay. Follow the steps below
    ```bash
    modules/sample-journal-editor-config-contributor/build/libs
    ```
+
+7. **Deploy**
+   Copy sample.creditor.config.contributor-1.0.0.jar in the $LIFERAY_HOME/deploy folder
