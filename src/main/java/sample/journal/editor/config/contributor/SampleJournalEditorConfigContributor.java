@@ -30,13 +30,13 @@ import java.util.Map;
 )
 public class SampleJournalEditorConfigContributor extends BaseEditorConfigContributor {
 
-    private static final String EXTRA_PLUGINS = "maximize,showblocks,iframe,mathjax,pastefromword,justify,colorbutton,basicstyles,indent";
+    private static final String EXTRA_PLUGINS = "maximize,showblocks,iframe,mathjax,pastefromword,justify,colorbutton,basicstyles,indent,smiley";
     private static final String MATH_JAX_LIB_URL = "//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML";
     private static final String[] EXTRA_TOOLS = {
         "ShowBlocks", "Iframe", "Maximize", "PasteFromWord",
         "JustifyRight", "JustifyCenter", "JustifyLeft", "JustifyBlock",
         "TextColor", "BGColor", "Superscript", "RemoveFormat", "Strike",
-        "Subscript", "Outdent", "Indent"
+        "Subscript", "Outdent", "Indent" , "Smiley"
     };
 
     @Override
