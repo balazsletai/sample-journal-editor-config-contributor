@@ -55,7 +55,7 @@ public class SampleJournalEditorConfigContributor extends BaseEditorConfigContri
     }
 
     private void configureToolbar(JSONObject jsonObject) {
-        JSONArray toolbarsLiferay = jsonObject.getJSONArray("toolbar_liferay");
+        JSONArray toolbarsLiferay = jsonObject.getJSONArray("toolbar_liferay"); // For Liferay 7.3 change toolbar_liferay to toolbar_liferayArticle
         JSONArray extraToolsLiferay = JSONFactoryUtil.createJSONArray();
 
         if (Validator.isNotNull(toolbarsLiferay)) {
@@ -67,7 +67,7 @@ public class SampleJournalEditorConfigContributor extends BaseEditorConfigContri
             extraToolsLiferay.put(tool);
         }
 
-        jsonObject.put("toolbar_liferay", extraToolsLiferay);
+        jsonObject.put("toolbar_liferay", extraToolsLiferay); // For Liferay 7.3 change toolbar_liferay to toolbar_liferayArticle
         jsonObject.put("mathJaxLib", MATH_JAX_LIB_URL);
     }
 }
