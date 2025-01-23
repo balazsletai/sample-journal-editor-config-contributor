@@ -27,6 +27,7 @@ This module provides an override for CKEditor in Liferay. Follow the steps below
      "editor.config.key=translateEditor" // Use this for version 7.3
      "editor.config.key=defaultTranslateEditor" // Use this for version 7.4+
      ```
+   - For Liferay 7.3 you will also need to change inside the `private void configureToolbar(JSONObject jsonObject)` method the `toolbar_liferay` to `toolbar_liferayArticle`
    - Save your changes.
 
 5. **Build the Module**  
